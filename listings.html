@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Listings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container"> 
+
+        <div class="navbar">
+            <div class="top">
+                <div class="logo">
+                    <img src="Images/Logo.jpg" alt="Logo" width="70" height="70">
+                </div>
+                <div class="nav-title">
+                    <h1>DRIVE HUB</h1>
+                    <h2>Kenya's best car selling website</h2>
+                </div>
+                <div>
+                    <button onclick="window.location.href='register.html'" class="nav-button"> REGISTER </button>
+                </div>
+            </div>
+            <div class="bottom">
+                <nav>
+                    <ul class="navlinks">
+                        <li><a href="index.html">HOME</a></li>  
+                        <li><a href="listings.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>   
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="product-filter">
+            <input type="text" placeholder="Search products..." id="search-input" />
+            <select name="search" id="category-filter">
+                <option value="All-categories">All Categories</option>
+                <option value="Pickups">Pickups</option>
+                <option value="Sedans">Sedans</option>
+                <option value="SUVS">SUVS</option>
+                <option value="Hatchbacks">Hatchbacks</option>
+            </select>
+        </div>
+
+        <div>
+            <h2>Our Products</h2>
+            <p>The following vehicles are available for sale currently</p>
+        </div>
+
+        <div class="listings">
+
+            <div id="sedans">
+                <div class="products" data-category="Sedans" data-name="toyota-corolla">
+                    <img src="Images/Toyota Corolla.jpg" alt="Toyota Corolla" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Toyota <br> Corolla <br> Black <br> 1,500,000</p>
+                    </div>
+                </div>
+                <div class="products" data-category="Sedans" data-name="mercedes-c-class">
+                    <img src="Images/Mercedes C class.jpg" alt="Mercedes C Class" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Mercedes <br> C Class  <br> Blue <br> 2,800,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="suvs">
+                <div class="products" data-category="SUVS" data-name="audi-q5">
+                    <img src="Images/Audi Q5.jpg" alt="Audi Q5" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Audi <br> Q5 <br> White <br> 2,700,000</p>
+                    </div>
+                </div>
+                <div class="products" data-category="SUVS" data-name="mazda-cx5">
+                    <img src="Images/Mazda CX5.jfif" alt="Mazda CX5" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Mazda <br> CX5 <br> Red <br> 2,800,000</p>
+                    </div>
+                </div>
+                <div class="products" data-category="SUVS" data-name="toyota-land-cruiser">
+                    <img src="Images/Toyota Land Cruiser.jpg" alt="Toyota Land Cruiser" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Toyota <br> Land Cruiser <br> Black <br> 8,500,000</p>
+                    </div>
+                </div>
+                <div class="products" data-category="SUVS" data-name="toyota-rav4">
+                    <img src="Images/Toyota RAV4 -Black.jpg" alt="Toyota RAV4" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Toyota <br> RAV4 <br> Black <br> 3,400,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pickups">
+                <div class="products" data-category="Pickups" data-name="isuzu-dmax">
+                    <img src="Images/Isuzu DMAX.jpg" alt="Isuzu DMAX" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Isuzu <br> DMAX <br> Grey <br> 6,400,000</p>
+                    </div>
+                </div>
+                <div class="products" data-category="Pickups" data-name="ford-ranger">
+                    <img src="Images/Ford Ranger.webp" alt="Ford Ranger" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Ford <br> Ranger <br> Orange <br> 6,500,000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="hatchbacks">
+                <div class="products" data-category="Hatchbacks" data-name="volkswagen-golf">
+                    <img src="Images/Volkswagen Golf.jpg" alt="Volkswagen Golf" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Volkswagen <br> Golf <br> White <br> 2,500,000</p>
+                    </div>
+                </div>
+                <div class="products" data-category="Hatchbacks" data-name="nissan-note">
+                    <img src="Images/Nissan Note.webp" alt="Nissan Note" width="200" height="150">
+                    <div class="description">
+                        <p>Brand: <br> Model: <br> Colour: <br> Price: </p>
+                        <p>Nissan <br> Note <br> White <br> 1,300,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="privacy.html">
+            <footer>
+                This website respects your privacy under the Data Privacy Protection Act (2019)
+            </footer>
+        </a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

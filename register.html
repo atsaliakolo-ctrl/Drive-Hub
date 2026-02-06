@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container"> 
+        <div class="navbar">
+            <div class="top">
+                <div class="logo">
+                    <img src="Images/Logo.jpg" alt="Logo" width="70" height="70">
+                </div>
+                <div class="nav-title">
+                    <h1>DRIVE HUB</h1>
+                    <h2>Kenya's best car selling website</h2>
+                </div>
+                <div>
+                    <button onclick="window.location.href='register.html'" class="nav-button"> REGISTER </button>
+                </div>
+            </div>
+            <div class="bottom">
+                <nav>
+                    <ul class="navlinks">
+                        <li><a href="index.html">HOME</a></li>  
+                        <li><a href="listings.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>   
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>How can we find you?</h2>
+            <h3>Register with us today and enjoy exclusive car deals</h3>
+            <form id="register-form">
+                <div class="name">
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Wycliffe Atsali">
+                </div>
+                <div class="email">
+                    <label for="address">Email Address:</label>
+                    <input type="email" id="address" name="address" placeholder="atsali123@gmail.com">
+                </div>
+                <div class="contact">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="contact">
+                    <label for="password1"> Confirm Password:</label>
+                    <input type="password" id="password1" name="password1">
+                </div>
+                <div class="privacy-agree">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">
+                        I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a>
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+        <a href="privacy.html">
+            <footer>
+                This website respects your privacy under the Data Privacy Protection Act (2019)
+            </footer>
+        </a>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
